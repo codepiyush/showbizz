@@ -27,7 +27,7 @@ body{
     font-family: 'Kodchasan', sans-serif;
     font-weight: bold;
     font-size: 100px;
-    color: rgb(241, 235, 235);
+    color: rgb(255, 255, 255);
     padding: 5px;
 }
 .main .sub{
@@ -39,7 +39,7 @@ body{
     width: 470px;
     font-size: 25px;
     font-family: 'Inconsolata', monospace;
-    color: rgb(252, 248, 248);
+    color: rgb(250, 6, 6);
     position: absolute;
 }
 .down{
@@ -47,9 +47,9 @@ body{
     margin-top: 680px;
     margin-left: 730px;
     z-index: 1;
-    color: red;
+    color: rgb(255, 255, 255);
     padding: 5px;
-    background-color: #000000;
+    /*background-color: #000000;*/
     border-radius: 50px;
     opacity: .8;
 }
