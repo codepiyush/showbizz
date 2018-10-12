@@ -1,0 +1,92 @@
+body{
+    background-color: rgba(0,0,0,0.9);
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid-3{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.logo{
+    margin-left: 5px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+.info{
+    font-size: 40px;
+    padding-left: 185px;
+    font-family: 'K2D', sans-serif;
+}
+.nav
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+   width: 100%;
+   padding: 15px 15px;
+   font-family: 'PT Sans', sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.sub{
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(236, 221, 221); 
+}
+.header{
+    padding: 1rem 0rem;
+    background-image: url(images/back6.jpeg);
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.showbizz{
+    margin-top: 20px;
+}
+.heading{
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.latest{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(252, 249, 249,.9);
+    border-bottom: black solid;
+}
+.center {
+    text-align: center;
+    margin: auto;
+  }
+  .container{
+    max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem 1rem;
+}
+.about1{
+    margin-left: 75px;
+}
+.contact{
+    word-spacing: 30px;
+    padding-top: 10px; 
+}
+.about{
+    background-color: #000000;
+    color: #333;
+}
+.left_border{
+    padding-left: 150px;
+    border-left: rgb(241, 238, 238) solid 1.5px;
+}
