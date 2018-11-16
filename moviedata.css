@@ -2,6 +2,7 @@ body{
     background-color: rgba(0,0,0,0.9);
     margin: 0;
     color: #fff;
+    display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .grid-3{
@@ -29,7 +30,7 @@ body{
 {
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
-   width: 100%;
+  max-width: 100%;
    padding: 12px 12px;
    padding-left: 2px;
    font-family: 'PT Sans', sans-serif;
@@ -61,11 +62,30 @@ body{
     color: rgb(255, 255, 255);
     padding: 5px;
 }
-.latest{
-    height: 60vh;
+.data{
+    width: 50vh;
+    padding: 0px;
+    height: 100vh;
+    display: block;
     width: 100%;
-    background-color: rgb(252, 249, 249,.9);
+    overflow: hidden;
+    background-color: rgba(248, 244, 244, 0.9);
     border-bottom: black solid;
+    color: #333;
+}
+.info{
+    padding-top: 15px;
+    font-size: 20px;
+    width: 1000px;
+}
+.image{
+    padding: 15px;
+}
+.grid-2-1{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 15% 80%;
+    
 }
 #msearch{
     border: 2px solid;
