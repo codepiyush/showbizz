@@ -41,7 +41,72 @@
         </nav>
     </header>
     <section class="latest">
-        
+        <p id='lmovies'>Latest Release</p>
+        <div class="grid-5 pad0 center">
+    <?php
+        $servername="localhost";
+        $username="root";
+        $password="";
+        $dbname="movies";
+        $conn=new mysqli($servername,$username,$password,$dbname);
+        if($conn->connect_error)
+        {
+            die("connection failed".$conn->connect_error);
+
+        }
+        $sql="SELECT * FROM movie order by Year desc limit 5";
+        if($conn->query($sql))
+        {
+            $result=$conn->query($sql);
+            if($result->num_rows>0)
+            {
+                while($row=$result->fetch_assoc())
+                {
+                   echo "<div>";
+                   echo "<form method='POST' action='moviedata.php'>";
+                   echo "<input type='hidden' name='msearch' value='".$row["Name"]."'>";
+                   echo "<button class='linkButton movielink'><img src='".$row["image"]."' height='280' width='230'><br><br>".$row["Name"]."</button>";
+                   echo "</form>";
+                   echo "</div>";
+                }
+            }
+        }
+    ?>
+    </div>
+    </section>
+    <section class="rated">
+        <p id='lmovies'>Highest Rated</p>
+        <div class="grid-5 pad0 center">
+    <?php
+        $servername="localhost";
+        $username="root";
+        $password="";
+        $dbname="movies";
+        $conn=new mysqli($servername,$username,$password,$dbname);
+        if($conn->connect_error)
+        {
+            die("connection failed".$conn->connect_error);
+
+        }
+        $sql="SELECT * FROM movie order by Rating desc limit 5";
+        if($conn->query($sql))
+        {
+            $result=$conn->query($sql);
+            if($result->num_rows>0)
+            {
+                while($row=$result->fetch_assoc())
+                {
+                   echo "<div>";
+                   echo "<form method='POST' action='moviedata.php'>";
+                   echo "<input type='hidden' name='msearch' value='".$row["Name"]."'>";
+                   echo "<button class='linkButton movielink'><img src='".$row["image"]."' height='280' width='230'><br><br>".$row["Name"]."</button>";
+                   echo "</form>";
+                   echo "</div>";
+                }
+            }
+        }
+    ?>
+    </div>
     </section>
     <div class="gener">
 

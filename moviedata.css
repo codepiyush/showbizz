@@ -1,6 +1,7 @@
 body{
     background-color: rgba(0,0,0,0.9);
     margin: 0;
+    padding: 0px;
     color: #fff;
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,7 +22,7 @@ body{
     margin-top: 0px;
     padding-bottom: 10px;
 }
-.info{
+.nmae{
     font-size: 40px;
     padding-left: 185px;
     font-family: 'K2D', sans-serif;
@@ -30,7 +31,7 @@ body{
 {
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
-  max-width: 100%;
+   max-width: 100%;
    padding: 12px 12px;
    padding-left: 2px;
    font-family: 'PT Sans', sans-serif;
@@ -49,6 +50,8 @@ body{
     padding: 1rem 0rem;
     background-image: url(images/back6.jpeg);
     overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -62,12 +65,15 @@ body{
     color: rgb(255, 255, 255);
     padding: 5px;
 }
+.datsec{
+    padding: 20px;
+}
 .data{
-    width: 50vh;
-    padding: 0px;
+    padding: 20px;
     height: 100vh;
     display: block;
-    width: 100%;
+    width: inherit;
+    border: 2px solid #333;
     overflow: hidden;
     background-color: rgba(248, 244, 244, 0.9);
     border-bottom: black solid;
@@ -76,16 +82,49 @@ body{
 .info{
     padding-top: 15px;
     font-size: 20px;
+    height: inherit;
     width: 1000px;
+    padding-left: 18px;
+    font-family: 'K2D', sans-serif;
+}
+.pad0{
+    padding: 0px;
+    
+}
+#topic{
+    font-size: 30px;
+    padding: 2px;
+}
+#topic::first-letter{
+    font-size: 40px;
+}
+img{
+    border-radius: 8px;
+    box-shadow: 4px 2px 5px 1px rgba(0, 0, 0, 0.8);
+    
 }
 .image{
-    padding: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .grid-2-1{
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 15% 80%;
+    grid-template-columns: .5fr 1.5fr;
     
+}
+#mname{
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 100px;
+    margin-left: 20px;
+    margin-right: 47px;
+    font-family: 'K2D', sans-serif;
+    border-bottom: 2px solid black;
+}
+.details{
+    padding-left: 50px;
+    line-height: 20px;
 }
 #msearch{
     border: 2px solid;
@@ -113,12 +152,13 @@ body{
     background-color: #fff;
     color: #333;
     transition-duration: .4s;
+    cursor: pointer;
 }
 .center {
     text-align: center;
     margin: auto;
   }
-  .container{
+.container{
     max-width: 960px;
   margin: auto;
   overflow: hidden;

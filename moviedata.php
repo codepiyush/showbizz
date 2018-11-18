@@ -21,7 +21,7 @@
                 Movies . Series . Anime
             </div>
         </div>
-        <div class="info">
+        <div class="nmae">
             Movies
         </div>
     </div>
@@ -40,7 +40,7 @@
             </div>
         </nav>
     </header>
-    <section class="data">
+    <section class='datsec'>
     <?php
         $servername="localhost";
         $username="root";
@@ -61,9 +61,20 @@
             {
                 while($row=$result->fetch_assoc())
                 {
-                    echo "<div class='grid-2-1'>";
+                    echo "<div class='grid-2-1 data'>";
+                    echo "<div class='pad0'>";
                     echo "<div class='image'><img src='".$row['image']."' height=350 width=300></div>";
-                    echo "<div class='info'>".$row["Info"]."</div>";
+                    echo "<div id='mname'>".$row["Name"]."</div>";
+                    echo "<div class='details'><p>IMDB Rating&nbsp&nbsp:&nbsp&nbsp".$row["Rating"]."</p>";
+                    echo "<p> Runtime&nbsp&nbsp:&nbsp&nbsp".$row["Length"]."&nbspmin</p>";
+                    echo "<p>Year Release&nbsp&nbsp:&nbsp&nbsp".$row["Year"]."</p>";
+                    echo "<p>Lead Actor&nbsp&nbsp:&nbsp&nbsp".$row["Actor"]."</p>";
+                    echo "<p>Director&nbsp&nbsp:&nbsp&nbsp".$row["Director"]."</p>";
+                    echo "<p>Production House&nbsp&nbsp:&nbsp&nbsp".$row["Production House"]."</p>";
+                    echo "<p>Boxoffice Collection&nbsp&nbsp:&nbsp&nbsp".$row["Boxoffice Collection"]."</p>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "<div class='info'><p id='topic'><u>About</u>&nbsp:</p>".$row["Info"]."</div>";
                     echo "</div>";
                 }
             }
