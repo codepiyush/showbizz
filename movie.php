@@ -33,7 +33,7 @@
                 Anime
             </div>
             <div class="left_border">
-                <form action="moviedata.php" method="POST" >
+                <form action="searchrel.php" method="POST" >
                     <input type="text" name="msearch" id="msearch" placeholder="Search movies">
                     <input type="submit" value="search" id="mbutton">
                 </form>
@@ -75,7 +75,7 @@
     </div>
     </section>
     <section class="rated">
-        <p id='lmovies'>Highest Rated</p>
+        <p id='lrated'>Highest Rated</p>
         <div class="grid-5 pad0 center">
     <?php
         $servername="localhost";
@@ -108,8 +108,98 @@
     ?>
     </div>
     </section>
-    <div class="gener">
-
+    <div class="genre center">
+        <p id='gname' class='center'>GENRES</p>
+        <div class='grid-4'>
+            <div class='paraspace'>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='action'>
+                    <button class='gbutton'> Action </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='adventure'>
+                    <button class='gbutton'> Aventure </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='animation'>
+                    <button class='gbutton'> Animation </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='biographical'>
+                    <button class='gbutton'> Biographical </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='comedy'>
+                    <button class='gbutton'> Comedy </button>
+                </form>
+            </div>
+            <div class='paraspace'>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='crime'>
+                    <button class='gbutton'> Crime </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='disaster'>
+                    <button class='gbutton'> Disaster </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='documentry'>
+                    <button class='gbutton'> Documentry </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='drama'>
+                    <button class='gbutton'> Drama </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='fantasy'>
+                    <button class='gbutton'> fantasy </button>
+                </form>
+            </div>
+            <div class='paraspace'>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='fiction'>
+                    <button class='gbutton'> Fiction </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='horror'>
+                    <button class='gbutton'> Horror </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='musical'>
+                    <button class='gbutton'> Musical </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='mystry'>
+                    <button class='gbutton'> Mystry </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='romantic comedy'>
+                    <button class='gbutton'> Romantic Comedy </button>
+                </form>
+            </div>
+            <div class='paraspace'>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='Romance'>
+                    <button class='gbutton'> Romance </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='science fiction'>
+                    <button class='gbutton'> Science Fiction </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='superhero'>
+                    <button class='gbutton'> Superhero </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='thriller'>
+                    <button class='gbutton'> Thriller </button>
+                </form>
+                <form method='POST' action='genresearch.php'>
+                    <input type='hidden' name='msearch' value='war'>
+                    <button class='gbutton'> War </button>
+                </form>
+            </div>
+        </div>
     </div>
     <section class="about">
         <div class="container grid-2 center">

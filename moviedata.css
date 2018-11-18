@@ -116,9 +116,9 @@ img{
 #mname{
     font-size: 30px;
     padding-top: 15px;
-    padding-left: 100px;
+    /*padding-left: 100px;
     margin-left: 20px;
-    margin-right: 47px;
+    margin-right: 47px;*/
     font-family: 'K2D', sans-serif;
     border-bottom: 2px solid black;
 }
@@ -178,4 +178,9 @@ img{
 .left_border{
     padding-left: 150px;
     border-left: rgb(241, 238, 238) solid 1.5px;
+}
+.error{
+    padding: 0px;
+    height: 44vh;
+    color: yellow;
 }
