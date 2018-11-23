@@ -27,6 +27,9 @@ body{
     padding-left: 185px;
     font-family: 'K2D', sans-serif;
 }
+.padadj{
+    padding-top: 10px;
+}
 .nav
 {
     background-color: rgba(0, 0, 0, 0.7);
@@ -167,4 +170,15 @@ img{
     padding: 0px;
     height: 44vh;
     color: rgb(255, 0, 0);
+}
+.linker{
+    font-size: 25px;
+    padding: 1rem 1rem;
+    width: 100px;
+    font-family: 'Inconsolata', monospace;
+    transition-duration: .5s;
+}
+.linker:hover{
+    background-color: rgba(233, 20, 20, 0.5);
+    transition-duration: .5s;
 }

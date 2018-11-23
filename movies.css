@@ -215,3 +215,6 @@ a{
     background-color: rgba(233, 20, 20, 0.5);
     transition-duration: .5s;
 }
+.padadj{
+    padding-top: 10px;
+}

@@ -25,14 +25,14 @@
         <a href="series.php">Series</a>
         </div>
     </div>
-        <nav class="nav grid-3 center">
-            <div class="font center">
+        <nav class="nav grid-3 center pad0">
+            <div class="font center linker">
             <a href="movie.php">Movies</a>
             </div>
-            <div class=" font center">
-                Anime
+            <div class=" font center linker">
+            <a href='animedisplay.php'>Anime</a>
             </div>
-            <div class="left_border">
+            <div class="left_border padadj">
                 <form action="seriesdsearch.php" method="POST" >
                     <input type="text" name="msearch" id="msearch" placeholder="Search movies">
                     <input type="submit" value="search" id="mbutton">
@@ -68,8 +68,16 @@
                     echo "<div class='details'><p>IMDB Rating&nbsp&nbsp:&nbsp&nbsp".$row["Rating"]."</p>";
                     echo "<p> Runtime&nbsp&nbsp:&nbsp&nbsp".$row["Length"]."&nbspmin</p>";
                     echo "<p>Year Release&nbsp&nbsp:&nbsp&nbsp".$row["Year"]."</p>";
-                    echo "<p>Lead Actor&nbsp&nbsp:&nbsp&nbsp".$row["Actor"]."</p>";
-                    echo "<p>Director&nbsp&nbsp:&nbsp&nbsp".$row["Director"]."</p>";
+                    echo "<form method='POST' action='actordata.php'>";
+                    echo "<p>Lead Actor&nbsp&nbsp:&nbsp&nbsp";
+                    echo "<input type='hidden' name='msearch' value='".$row["Actor"]."'>";
+                    echo "<button class='linkButton movielink'>".$row["Actor"]."</button>";
+                    echo "</form></p>";
+                    echo "<form method='POST' action='data.php'>";
+                    echo "<p>Director&nbsp&nbsp:&nbsp&nbsp";
+                    echo "<input type='hidden' name='msearch' value='".$row["Director"]."'>";
+                    echo "<button class='linkButton movielink'>".$row["Director"]."</button>";
+                    echo "</form></p>";
                     echo "<p>Production House&nbsp&nbsp:&nbsp&nbsp".$row["Production"]."</p>";
                     echo "<p>Genre&nbsp&nbsp:&nbsp&nbsp";
                     $sql2="SELECT * FROM seriesgenre where name='$name'";

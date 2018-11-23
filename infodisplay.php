@@ -11,7 +11,7 @@
     $username = "root";
     $password = "";
     $dbname = "movies";
-    $name = $_POST["search"];
+    $name = $_POST["wsearch"];
     
 
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -27,13 +27,13 @@
     ?>
 <div id="container">
     <div id="header">
-    <form action="infodisplay.php" method="POST">
+    <form action="search.php" method="POST">
        
-           <a class="home" href="home.html">Showbizz.in</a>
-             <a class="topnav" href="movie.html">Movies</a>
-             <a class="topnav" href="Tvseries.html">Tv-Shows</a>
-             <a class="topnav" href="top.html">Top 10</a>
-        <input type="text" placeholder="Search" name="search" class="searchbar"><button type="submit" class="searchbutton"><i class="fa fa-fw fa-search"></i></button> 
+           <a class="home" href="welcome.html">Showbizz.in</a>
+             <a class="topnav" href="movie.php">Movies</a>
+             <a class="topnav" href="series.php">Series</a>
+             <a class="topnav" href="animedisplay.php">Anime</a>
+        <input type="text" placeholder="Search" name="wsearch" class="searchbar"><button type="submit" class="searchbutton"><i class="fa fa-fw fa-search"></i></button> 
     </form>
     </div>
     <div id="main">
@@ -57,18 +57,10 @@
             <div id="plotarea">
                     <p class="rightheading">Plot:</p>
                     <pre class="synopsis"><?php echo $row["Info"]; ?></pre>
-            </div>
-        <div id="revarea">
-            <p class="rightheading">Review:</p>
-            <pre class="review"><b>Anonymous: </b><?php echo $row["reviews"]; ?>
-            </pre>
-
-        </div>    
-        
+            </div>    
+            <footer class="footer">
+        <p>Showbizz Media &copy; 2018 </p>
+    </footer>    
         </div>
-    </div>
-
-    <div id="footer">
-    
     </div>
 

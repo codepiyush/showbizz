@@ -25,14 +25,14 @@
         <a href="movie.php">Movies</a>
         </div>
     </div>
-        <nav class="nav grid-3 center">
-            <div class="font center">
+        <nav class="nav grid-3 center pad0">
+            <div class="font center linker">
             <a href="movie.php">Movies</a>
             </div>
-            <div class=" font center">
-                Anime
+            <div class=" font center linker">
+            <a href='animedisplay.php'>Anime</a>
             </div>
-            <div class="left_border">
+            <div class="left_border padadj">
                 <form action="moviedata.php" method="POST" >
                     <input type="text" name="msearch" id="msearch" placeholder="Search movies">
                     <input type="submit" value="search" id="mbutton">

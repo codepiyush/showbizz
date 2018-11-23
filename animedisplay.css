@@ -5,7 +5,14 @@
     margin-right: auto;
 }
 
+.bg{
 
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    }
 #header{
     padding: 2px 2px 1px 2px;
     padding-top: 15px;
@@ -21,7 +28,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: blueviolet;
+    color: black;
 }
 
 a:hover {

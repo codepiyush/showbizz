@@ -30,9 +30,9 @@
             <a href="series.php">Series</a>
             </div>
             <div class=" font center linker">
-                Anime
+                <a href='animedisplay.php'>Anime</a>
             </div>
-            <div class="left_border">
+            <div class="left_border padadj">
                 <form action="searchrel.php" method="POST" >
                     <input type="text" name="msearch" id="msearch" placeholder="Search movies">
                     <input type="submit" value="search" id="mbutton">
