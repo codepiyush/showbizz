@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="series.css">
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -15,25 +15,25 @@
         <div class="grid-3 showbizz">
         <div class="logo">
             <div class="heading">
-                <a href="welcome.html">Showbizz</a>
+            <a href="welcome.html">Showbizz</a>
             </div>
             <div class="sub">
                 Movies . Series . Anime
             </div>
         </div>
         <div class="info">
-            Movies
+            Series
         </div>
     </div>
-        <nav class="nav grid-3 center pad0">
-            <div class="font center linker">
-            <a href="series.php">Series</a>
+        <nav class="nav grid-3 center">
+            <div class="font center">
+            <a href="movie.php">Movies</a>
             </div>
-            <div class=" font center linker">
+            <div class=" font center">
                 Anime
             </div>
             <div class="left_border">
-                <form action="searchrel.php" method="POST" >
+                <form action="seriessearch.php" method="POST" >
                     <input type="text" name="msearch" id="msearch" placeholder="Search movies">
                     <input type="submit" value="search" id="mbutton">
                 </form>
@@ -54,7 +54,7 @@
             die("connection failed".$conn->connect_error);
 
         }
-        $sql="SELECT * FROM movie order by Year desc limit 5";
+        $sql="SELECT * FROM series order by Year desc limit 5";
         if($conn->query($sql))
         {
             $result=$conn->query($sql);
@@ -63,7 +63,7 @@
                 while($row=$result->fetch_assoc())
                 {
                    echo "<div>";
-                   echo "<form method='POST' action='moviedata.php'>";
+                   echo "<form method='POST' action='seriesdata.php'>";
                    echo "<input type='hidden' name='msearch' value='".$row["Name"]."'>";
                    echo "<button class='linkButton movielink'><img src='".$row["image"]."' height='280' width='230'><br><br>".$row["Name"]."</button>";
                    echo "</form>";
@@ -88,7 +88,7 @@
             die("connection failed".$conn->connect_error);
 
         }
-        $sql="SELECT * FROM movie order by Rating desc limit 5";
+        $sql="SELECT * FROM series order by Rating desc limit 5";
         if($conn->query($sql))
         {
             $result=$conn->query($sql);
@@ -97,7 +97,7 @@
                 while($row=$result->fetch_assoc())
                 {
                    echo "<div>";
-                   echo "<form method='POST' action='moviedata.php'>";
+                   echo "<form method='POST' action='seriesdata.php'>";
                    echo "<input type='hidden' name='msearch' value='".$row["Name"]."'>";
                    echo "<button class='linkButton movielink'><img src='".$row["image"]."' height='280' width='230'><br><br>".$row["Name"]."</button>";
                    echo "</form>";
@@ -112,89 +112,89 @@
         <p id='gname' class='center'>GENRES</p>
         <div class='grid-4'>
             <div class='paraspace'>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='action'>
                     <button class='gbutton'> Action </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='adventure'>
                     <button class='gbutton'> Aventure </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='animation'>
                     <button class='gbutton'> Animation </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='biographical'>
                     <button class='gbutton'> Biographical </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='comedy'>
                     <button class='gbutton'> Comedy </button>
                 </form>
             </div>
             <div class='paraspace'>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='crime'>
                     <button class='gbutton'> Crime </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='disaster'>
                     <button class='gbutton'> Disaster </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='documentry'>
                     <button class='gbutton'> Documentry </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='drama'>
                     <button class='gbutton'> Drama </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='fantasy'>
                     <button class='gbutton'> fantasy </button>
                 </form>
             </div>
             <div class='paraspace'>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='fiction'>
                     <button class='gbutton'> Fiction </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='horror'>
                     <button class='gbutton'> Horror </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='musical'>
                     <button class='gbutton'> Musical </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='mystry'>
                     <button class='gbutton'> Mystry </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='romantic comedy'>
                     <button class='gbutton'> Romantic Comedy </button>
                 </form>
             </div>
             <div class='paraspace'>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='Romance'>
                     <button class='gbutton'> Romance </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='science fiction'>
                     <button class='gbutton'> Science Fiction </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='superhero'>
                     <button class='gbutton'> Superhero </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='thriller'>
                     <button class='gbutton'> Thriller </button>
                 </form>
-                <form method='POST' action='genresearch.php'>
+                <form method='POST' action='seriesgenre.php'>
                     <input type='hidden' name='msearch' value='war'>
                     <button class='gbutton'> War </button>
                 </form>

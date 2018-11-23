@@ -184,3 +184,7 @@ img{
     height: 44vh;
     color: yellow;
 }
+a{
+    text-decoration: none;
+    color: #fff; 
+}

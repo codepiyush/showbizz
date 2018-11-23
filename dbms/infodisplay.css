@@ -1,0 +1,174 @@
+#container{
+    width:1500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#header{
+    padding: 2px 2px 1px 2px;
+    padding-top: 15px;
+    color: #2913E2;
+    background: linear-gradient(#FF943A, #FF7500);
+    /*margin: auto;*/
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:hover {
+    text-decoration: none;
+    color:white;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.home{
+    margin-right:150px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.topnav{
+    padding: 15px;
+    font-size:25px;
+    font-weight: bold;
+    margin:0px;
+}
+
+.searchbar{
+    border: 2px solid black;
+    border-width: 0px;
+    border-radius: 15px;
+    margin-left: 500px;
+    padding: 8px;
+    outline:none;
+
+}
+
+.searchbutton{
+    margin-left:6px;
+    background-color: Transparent;
+    border:0px;
+    transition: transform .1s;
+    outline:none;
+    cursor: pointer;
+    padding-top: 4px;
+}
+.searchbutton:hover{
+    transform: scale(1.2);
+}
+
+
+#leftinfo{
+    width:230px;
+    float:left;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+    border-right-style: solid;
+    border-right-color:rgb(228, 224, 224);
+    border-right-width: thin;
+    margin-right:10px;
+}
+
+
+#rightinfo{
+    margin-left: 245px;
+    padding : 10px;
+    font-family : Helvetica, sans-serif;
+}
+
+
+.rightheading{
+    border-right-style:solid;
+    border-right-color: #2913E2;
+    border-right-width: 4px;
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+.synopsis{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 110%;
+    height: auto;
+    text-align: left;
+    overflow: auto;
+    padding:5px;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.synopsis:hover{
+    background-color: rgb(221, 221, 221);
+}
+.review{
+    overflow: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:left;
+    height: 290px;
+    font-size: 17px;
+    line-height: 110%;
+    overflow: auto;
+    padding:5px;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+    
+}
+.review:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+#footer{
+    clear: both;
+}
+.username{
+    text-decoration-line: underline;
+}
+.infoheading{
+    text-decoration-line: underline;
+    font-weight: bold;
+    font-size: 25px;
+}
+.sinfo{
+    word-wrap: break-word; 
+    line-height: 80%;
+}
+.image{
+    align-content: center;
+    padding: 2px;
+    border-style: solid;
+    border-color: rgb(228, 224, 224);
+    border-width: thin;
+}
+.imgtext{
+    word-wrap: break-word; 
+    text-align: center;
+    margin-top: 2px;
+}
+
+pre {
+    white-space: pre-wrap;        
+    white-space: -moz-pre-wrap;   
+    white-space: -pre-wrap;       
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word; 
+   }
+
+
+
+
+
+
+
+
+
+/* user review, fir header wali links ko center align karke border se seperate karna hai. review me usename daalna hai, footer daalna hai. */

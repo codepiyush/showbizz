@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="moviedata.css">
+    <link rel="stylesheet" href="seriesdata.css">
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -22,18 +22,18 @@
             </div>
         </div>
         <div class="nmae">
-        <a href="movie.php">Movies</a>
+        <a href="series.php">Series</a>
         </div>
     </div>
         <nav class="nav grid-3 center">
             <div class="font center">
-            <a href="series.php">Series</a>
+            <a href="movie.php">Movies</a>
             </div>
             <div class=" font center">
                 Anime
             </div>
             <div class="left_border">
-                <form action="searchrel.php" method="POST" >
+                <form action="seriesdsearch.php" method="POST" >
                     <input type="text" name="msearch" id="msearch" placeholder="Search movies">
                     <input type="submit" value="search" id="mbutton">
                 </form>
@@ -53,7 +53,7 @@
 
         }
         $name=$_POST["msearch"];
-        $sql="SELECT * FROM movie where name='$name'";
+        $sql="SELECT * FROM series where name='$name'";
         if($conn->query($sql))
         {
             $result=$conn->query($sql);
@@ -70,10 +70,9 @@
                     echo "<p>Year Release&nbsp&nbsp:&nbsp&nbsp".$row["Year"]."</p>";
                     echo "<p>Lead Actor&nbsp&nbsp:&nbsp&nbsp".$row["Actor"]."</p>";
                     echo "<p>Director&nbsp&nbsp:&nbsp&nbsp".$row["Director"]."</p>";
-                    echo "<p>Production House&nbsp&nbsp:&nbsp&nbsp".$row["Production House"]."</p>";
-                    echo "<p>Boxoffice Collection&nbsp&nbsp:&nbsp&nbsp".$row["Boxoffice Collection"]."</p>";
+                    echo "<p>Production House&nbsp&nbsp:&nbsp&nbsp".$row["Production"]."</p>";
                     echo "<p>Genre&nbsp&nbsp:&nbsp&nbsp";
-                    $sql2="SELECT * FROM moviegenre where name='$name'";
+                    $sql2="SELECT * FROM seriesgenre where name='$name'";
         if($conn->query($sql2))
         {
             $result2=$conn->query($sql2);

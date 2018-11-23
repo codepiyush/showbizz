@@ -48,7 +48,7 @@ body{
 }
 .header{
     padding: 1rem 0rem;
-    background-image: url(images/back6.jpeg);
+    background-color: rgba(2, 2, 2, 0);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,6 +64,10 @@ body{
     font-size: 40px;
     color: rgb(255, 255, 255);
     padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: #fff; 
 }
 .searchrel{
     height: auto;
@@ -163,8 +167,4 @@ img{
     padding: 0px;
     height: 44vh;
     color: rgb(255, 0, 0);
-}
-a{
-    text-decoration: none;
-    color: #fff; 
 }

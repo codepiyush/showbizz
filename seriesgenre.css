@@ -27,6 +27,10 @@ body{
     padding-left: 185px;
     font-family: 'K2D', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: #fff; 
+}
 .nav
 {
     background-color: rgba(0, 0, 0, 0.7);
@@ -48,7 +52,7 @@ body{
 }
 .header{
     padding: 1rem 0rem;
-    background-image: url(images/back6.jpeg);
+    background-color: rgba(2, 2, 2, 0);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -163,8 +167,4 @@ img{
     padding: 0px;
     height: 44vh;
     color: rgb(255, 0, 0);
-}
-a{
-    text-decoration: none;
-    color: #fff; 
 }

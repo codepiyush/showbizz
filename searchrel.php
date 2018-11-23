@@ -15,19 +15,19 @@
         <div class="grid-3 showbizz">
         <div class="logo">
             <div class="heading">
-                Showbizz
+            <a href="welcome.html">Showbizz</a>
             </div>
             <div class="sub">
                 Movies . Series . Anime
             </div>
         </div>
         <div class="nmae">
-            Movies
+            <a href="movie.php">Movies</a>
         </div>
     </div>
         <nav class="nav grid-3 center">
             <div class="font center">
-                Series
+            <a href="movie.php">Movies</a>
             </div>
             <div class=" font center">
                 Anime
@@ -53,7 +53,7 @@
 
         }
         $name=$_POST["msearch"];
-        $sql="SELECT * FROM movie where parent='$name'";
+        $sql="SELECT * FROM movie where parent like'%$name%' or name like '%$name%'";
         if($conn->query($sql))
         {
             $result=$conn->query($sql);

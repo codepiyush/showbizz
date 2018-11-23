@@ -1,9 +1,7 @@
 body{
     background-color: rgba(0,0,0,0.9);
     margin: 0;
-    padding: 0px;
     color: #fff;
-    display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .grid-3{
@@ -14,15 +12,18 @@ body{
 .grid-2{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(2,1fr);
-    
+    grid-template-columns: repeat(2,1fr);  
 }
 .logo{
     margin-left: 5px;
     margin-top: 0px;
     padding-bottom: 10px;
 }
-.nmae{
+a{
+    text-decoration: none;
+    color: #fff; 
+}
+.info{
     font-size: 40px;
     padding-left: 185px;
     font-family: 'K2D', sans-serif;
@@ -31,7 +32,7 @@ body{
 {
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
-   max-width: 100%;
+   width: 100%;
    padding: 12px 12px;
    padding-left: 2px;
    font-family: 'PT Sans', sans-serif;
@@ -48,10 +49,8 @@ body{
 }
 .header{
     padding: 1rem 0rem;
-    background-image: url(images/back6.jpeg);
+    background-color: rgba(2, 2, 2, 0);
     overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -65,47 +64,7 @@ body{
     color: rgb(255, 255, 255);
     padding: 5px;
 }
-.searchrel{
-    height: auto;
-    padding: 50px;
-    color: #000;
-    background-color: rgb(238, 226, 226);
-}
-.linkButton { 
-    background: none;
-    border: none;
-    color: #080808;
-    cursor: pointer; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    padding: 15px;
-}
-.border-bottom{
-    padding: 20px;
-    border: 2px solid black;
-}
-.pad0{
-    padding: 0px;
-}
-img{
-    border-radius: 8px;
-    box-shadow: 4px 2px 5px 1px rgba(0, 0, 0, 0.8);
-    
-}
-.image{
-    padding-left: 20px;
-    padding-top: 20px;
-}
-.grid-2-1{
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: .5fr 1.5fr;
-    
-}
-.details{
-    padding-left: 50px;
-    line-height: 20px;
-}
+
 #msearch{
     border: 2px solid;
     border-color: rgba(9, 241, 86, 0.9);
@@ -132,7 +91,93 @@ img{
     background-color: #fff;
     color: #333;
     transition-duration: .4s;
+}
+.latest{
+    height: 60vh;
+    padding: 30px;
+    background-color: rgba(76, 192, 10, 0.781);
+    border-bottom: rgb(48, 47, 47) solid;
+}
+.rated{
+    height: 60vh;
+    padding: 30px;
+    background-color: rgba(233, 20, 20, 0.9);
+    border-bottom: black solid ;
+}
+.pad0{
+    padding: 0px;
+}
+#lmovies{
+    color: rgb(7, 7, 7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+#lrated{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+img{
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.8); 
+}
+.grid-5{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5,1fr);  
+}
+.linkButton { 
+    background: none;
+    border: none;
+    color: #080808;
+    cursor: pointer; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    padding: 15px;
+}
+.movielink{
+    transition-duration: .3s;
+}
+.movielink:hover{
+    border-radius: 4px;
+    transition-duration: .3s;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.8);
+}
+.genre{
+    height: 50vh;
+    padding: 30px;
+    background-color: rgba(17, 17, 17, 0.7);
+    border-bottom: black solid;
+    letter-spacing: 2px;
+}
+#gname{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 0, 0, 0.883);
+    padding-bottom: 40px;
+}
+.grid-4{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(4,1fr);  
+}
+.gbutton{
+    background: none;
+    border: none;
+    color: #fff;
     cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 180px;
+    transition-duration: .9s;
+}
+.gbutton:hover{
+    background-color: rgba(233, 20, 20, 0.5);
+    transition-duration: .2s;
+}
+.paraspace{
+    line-height: 50px;
 }
 .center {
     text-align: center;
@@ -153,18 +198,9 @@ img{
 }
 .about{
     background-color: #000000;
-    color: #333;
+    color: rgb(68, 67, 67);
 }
 .left_border{
     padding-left: 150px;
     border-left: rgb(241, 238, 238) solid 1.5px;
-}
-.error{
-    padding: 0px;
-    height: 44vh;
-    color: rgb(255, 0, 0);
-}
-a{
-    text-decoration: none;
-    color: #fff; 
 }

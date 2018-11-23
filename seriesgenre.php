@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="moviedata.css">
+    <link rel="stylesheet" href="seriesgenre.css">
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -27,20 +27,20 @@
     </div>
         <nav class="nav grid-3 center">
             <div class="font center">
-            <a href="series.php">Series</a>
+            <a href="movie.php">Movies</a>
             </div>
             <div class=" font center">
                 Anime
             </div>
             <div class="left_border">
-                <form action="searchrel.php" method="POST" >
+                <form action="moviedata.php" method="POST" >
                     <input type="text" name="msearch" id="msearch" placeholder="Search movies">
                     <input type="submit" value="search" id="mbutton">
                 </form>
             </div>
         </nav>
     </header>
-    <section class='datsec'>
+    <section class="searchrel">
     <?php
         $servername="localhost";
         $username="root";
@@ -53,7 +53,7 @@
 
         }
         $name=$_POST["msearch"];
-        $sql="SELECT * FROM movie where name='$name'";
+        $sql="SELECT * FROM series inner join seriesgenre on series.name=seriesgenre.name where genre='$name'";
         if($conn->query($sql))
         {
             $result=$conn->query($sql);
@@ -61,44 +61,19 @@
             {
                 while($row=$result->fetch_assoc())
                 {
-                    echo "<div class='grid-2-1 data'>";
-                    echo "<div class='pad0'>";
-                    echo "<div class='image center'><img src='".$row['image']."' height=350 width=300></div>";
-                    echo "<div id='mname' class='center'>".$row["Name"]."</div>";
-                    echo "<div class='details'><p>IMDB Rating&nbsp&nbsp:&nbsp&nbsp".$row["Rating"]."</p>";
-                    echo "<p> Runtime&nbsp&nbsp:&nbsp&nbsp".$row["Length"]."&nbspmin</p>";
-                    echo "<p>Year Release&nbsp&nbsp:&nbsp&nbsp".$row["Year"]."</p>";
-                    echo "<p>Lead Actor&nbsp&nbsp:&nbsp&nbsp".$row["Actor"]."</p>";
-                    echo "<p>Director&nbsp&nbsp:&nbsp&nbsp".$row["Director"]."</p>";
-                    echo "<p>Production House&nbsp&nbsp:&nbsp&nbsp".$row["Production House"]."</p>";
-                    echo "<p>Boxoffice Collection&nbsp&nbsp:&nbsp&nbsp".$row["Boxoffice Collection"]."</p>";
-                    echo "<p>Genre&nbsp&nbsp:&nbsp&nbsp";
-                    $sql2="SELECT * FROM moviegenre where name='$name'";
-        if($conn->query($sql2))
-        {
-            $result2=$conn->query($sql2);
-            $i=0;
-            if($result2->num_rows>0)
-            {
-                while($row2=$result2->fetch_assoc())
-                {
-                    if($i!=0)
-                    { echo "/";
-                    }
-                    echo $row2["genre"];
-                    $i++;
-                }
-            }
-        }
-                    echo "</p></div>";
-                    echo "</div>";
-                    echo "<div class='info'><p id='topic'><u>About</u>&nbsp:</p>".$row["about"]."</div>";
-                    echo "</div>";
+                    echo "<div class='grid-2-1 border-bottom'>";
+                    echo "<div class='pad0 center'><img src='".$row["image"]."' width=130 height=180></div>";
+                    echo "<div><form method='POST' action='moviedata.php'>";
+                    echo "<input type='hidden' name='msearch' value='".$row["Name"]."'>";
+                    echo "<button class='linkButton movielink'>".$row["Name"]."</button>";
+                    echo "</form>";
+                    echo "<p>IMDB Rating&nbsp&nbsp:&nbsp&nbsp".$row["Rating"]."&nbsp&nbsp|&nbsp&nbspLength&nbsp&nbsp:&nbsp&nbsp".$row["Length"]."&nbspmin";
+                    echo "</div></div>";
                 }
             }
             else{
                 echo "<div class='error center'><p>Oops!</p><p>No Data Found!</p>";
-                echo "<p>Check if entered string is correct</p></div>";
+                echo "<p>No result for this Genre!</p></div>";
             }
         }
         

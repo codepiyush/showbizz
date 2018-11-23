@@ -22,6 +22,7 @@ body{
     left: 5%;
     padding: 10px;
 }
+
 .main .title{
     
     font-family: 'Kodchasan', sans-serif;
@@ -29,6 +30,10 @@ body{
     font-size: 100px;
     color: rgb(255, 255, 255);
     padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: #fff; 
 }
 .main .sub{
     background-color: #000000;
@@ -42,6 +47,9 @@ body{
     color: rgb(250, 6, 6);
     position: absolute;
 }
+.pad0{
+    padding: 0px;
+}
 .down{
     position: absolute;
     margin-top: 680px;
@@ -51,6 +59,19 @@ body{
     padding: 5px;
     border-radius: 50px;
     opacity: .8;
+}
+.select{
+    padding: 0px;
+}
+.linker{
+    font-size: 25px;
+    padding: 4rem 1rem;
+    font-family: 'Inconsolata', monospace;
+    transition-duration: .5s;
+}
+.linker:hover{
+    background-color: rgba(233, 20, 20, 0.5);
+    transition-duration: .5s;
 }
 .grid-3{
     display: grid;
@@ -67,7 +88,14 @@ body{
     max-width: 960px;
   margin: auto;
   overflow: hidden;
-  padding: 4rem 1rem;
+  
+}
+.container2{
+    max-width: 960px;
+  margin: auto;
+  padding: 3rem 1rem;
+  overflow: hidden;
+  
 }
 .contact{
     word-spacing: 30px; 

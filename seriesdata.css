@@ -22,6 +22,10 @@ body{
     margin-top: 0px;
     padding-bottom: 10px;
 }
+a{
+    text-decoration: none;
+    color: #fff; 
+}
 .nmae{
     font-size: 40px;
     padding-left: 185px;
@@ -48,7 +52,7 @@ body{
 }
 .header{
     padding: 1rem 0rem;
-    background-image: url(images/back6.jpeg);
+    background-color: rgba(2, 2, 2, 0);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,27 +69,38 @@ body{
     color: rgb(255, 255, 255);
     padding: 5px;
 }
-.searchrel{
-    height: auto;
-    padding: 50px;
-    color: #000;
-    background-color: rgb(238, 226, 226);
-}
-.linkButton { 
-    background: none;
-    border: none;
-    color: #080808;
-    cursor: pointer; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    padding: 15px;
-}
-.border-bottom{
+.datsec{
     padding: 20px;
-    border: 2px solid black;
+}
+.data{
+    padding: 20px;
+    height: 100vh;
+    display: block;
+    width: inherit;
+    border: 2px solid #333;
+    overflow: hidden;
+    background-color: rgba(248, 244, 244, 0.9);
+    border-bottom: black solid;
+    color: #333;
+}
+.info{
+    padding-top: 15px;
+    font-size: 20px;
+    height: inherit;
+    width: 1000px;
+    padding-left: 18px;
+    font-family: 'K2D', sans-serif;
 }
 .pad0{
     padding: 0px;
+    
+}
+#topic{
+    font-size: 30px;
+    padding: 2px;
+}
+#topic::first-letter{
+    font-size: 40px;
 }
 img{
     border-radius: 8px;
@@ -101,6 +116,15 @@ img{
     grid-gap: 0px;
     grid-template-columns: .5fr 1.5fr;
     
+}
+#mname{
+    font-size: 30px;
+    padding-top: 15px;
+    /*padding-left: 100px;
+    margin-left: 20px;
+    margin-right: 47px;*/
+    font-family: 'K2D', sans-serif;
+    border-bottom: 2px solid black;
 }
 .details{
     padding-left: 50px;
@@ -162,9 +186,5 @@ img{
 .error{
     padding: 0px;
     height: 44vh;
-    color: rgb(255, 0, 0);
-}
-a{
-    text-decoration: none;
-    color: #fff; 
+    color: yellow;
 }

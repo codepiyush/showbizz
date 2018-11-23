@@ -1,0 +1,157 @@
+#container{
+    width:1500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#header{
+    padding: 2px 2px 1px 2px;
+    padding-top: 15px;
+    color: #2913E2;
+    background: linear-gradient(#FF943A, #FF7500);
+    /*margin: auto;*/
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:hover {
+    text-decoration: none;
+    color:white;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.home{
+    margin-right:150px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.topnav{
+    padding: 15px;
+    font-size:25px;
+    font-weight: bold;
+    margin:0px;
+}
+
+.searchbar{
+    border: 2px solid black;
+    border-width: 0px;
+    border-radius: 15px;
+    margin-left: 500px;
+    padding: 8px;
+    outline:none;
+
+}
+
+.searchbutton{
+    margin-left:6px;
+    background-color: Transparent;
+    border:0px;
+    transition: transform .1s;
+    outline:none;
+    cursor: pointer;
+    padding-top: 4px;
+}
+.searchbutton:hover{
+    transform: scale(1.2);
+}
+
+
+pre {
+    white-space: pre-wrap;        
+    white-space: -moz-pre-wrap;   
+    white-space: -pre-wrap;       
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word; 
+   }
+
+#imagegallery1{
+    float: left;
+    margin-left:50px ;
+}
+.img{
+    background-color: Transparent;
+    border: 0px;
+    transition: transform .2s;
+}
+.img:hover{
+        transform: scale(1.1);
+}
+.title1{
+    margin-left:50px;
+    padding-top:2px;
+    font-size: 50px;
+}
+
+.title2{
+    clear:both;
+    margin-left:50px;
+    padding-top:2px;
+    font-size: 50px;
+}
+
+#imagegallery2{
+    float: left;
+    margin-left:50px ;
+}
+
+#end{
+    clear:both;
+    background-color: black;
+}
+
+.genre{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.gbutton{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 180px;
+    transition-duration: .9s;
+}
+.gbutton:hover{
+    background-color: rgba(233, 20, 20, 0.5);
+    transition-duration: .2s;
+}
+
+#gname{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 0, 0, 0.883);
+    padding-bottom: 40px;
+}
+
+.grid-3{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3,1fr);  
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-left: 60px;
+    
+}
+
+.paraspace{
+    line-height: 50px;
+}
