@@ -25,7 +25,9 @@ a:link {
     text-decoration: none;
     color: black;
 }
-
+.about123{
+    color: #333;
+}
 a:visited {
     text-decoration: none;
     color: black;

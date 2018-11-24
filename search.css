@@ -22,7 +22,9 @@
     background-position: center;
     background-size: cover;
     }
-
+    .about123{
+        color: #333;
+    }
 a:link {
     text-decoration: none;
     color: black;

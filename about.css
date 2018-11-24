@@ -1,0 +1,227 @@
+body{
+    background-color: rgba(0,0,0,0.9);
+    margin: 0;
+    padding: 0px;
+    color: #fff;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid-3{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.logo{
+    margin-left: 5px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff; 
+}
+.nmae{
+    font-size: 40px;
+    padding-left: 185px;
+    font-family: 'K2D', sans-serif;
+}
+.nav
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+   max-width: 100%;
+   padding: 12px 12px;
+   padding-left: 2px;
+   font-family: 'PT Sans', sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font{
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.sub{
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(236, 221, 221); 
+}
+.header{
+    padding: 1rem 0rem;
+    background-color: rgba(2, 2, 2, 0);
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.showbizz{
+    margin-top: 20px;
+}
+.heading{
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.data{
+    padding: 20px;
+    height: 100vh;
+    display: block;
+    width: inherit;
+    border: 2px solid #333;
+    overflow: hidden;
+    background-color: rgba(248, 244, 244, 0.9);
+    border-bottom: black solid;
+    color: #333;
+}
+
+.info{
+    padding-top: 15px;
+    font-size: 20px;
+    height: inherit;
+    width: 1000px;
+    padding-left: 18px;
+    font-family: 'K2D', sans-serif;
+}
+.pad0{
+    padding: 0px;
+    
+}
+#topic{
+    font-size: 30px;
+    padding: 2px;
+}
+#topic::first-letter{
+    font-size: 40px;
+}
+img{
+    border-radius: 8px;
+    box-shadow: 4px 2px 5px 1px rgba(0, 0, 0, 0.8);
+    
+}
+.image{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.grid-2-1{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: .5fr 1.5fr;
+    
+}
+#mname{
+    font-size: 30px;
+    padding-top: 15px;
+    /*padding-left: 100px;
+    margin-left: 20px;
+    margin-right: 47px;*/
+    font-family: 'K2D', sans-serif;
+    border-bottom: 2px solid black;
+}
+.details{
+    padding-left: 50px;
+    line-height: 20px;
+}
+#msearch{
+    border: 2px solid;
+    border-color: rgba(9, 241, 86, 0.9);
+    border-radius: 10px;
+    padding: 6px;
+    padding-left: 10px;
+    width: 200px;
+    background-color: rgb(41, 39, 39);
+    color: #fff;
+}
+#mbutton{
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid;
+    font-size: 17px;
+    border-color: rgba(9, 241, 86, 0.9);
+    border-radius: 10px;
+    width: 100px;;
+    background-color: rgb(73, 77, 74);
+    padding: 6px;
+    transition-duration: .4s;
+}
+#mbutton:hover{
+    background-color: #fff;
+    color: #333;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+    margin: auto;
+  }
+.container{
+    max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem 1rem;
+}
+.about1{
+    margin-left: 75px;
+}
+.contact{
+    word-spacing: 30px;
+    padding-top: 10px; 
+}
+.about{
+    background-color: #000000;
+    color: #333;
+}
+.padadj{
+    padding-top: 10px;
+}
+.left_border{
+    padding-left: 150px;
+    border-left: rgb(241, 238, 238) solid 1.5px;
+}
+.error{
+    padding: 0px;
+    height: 44vh;
+    color: yellow;
+}
+.linker{
+    font-size: 25px;
+    padding: 1rem 1rem;
+    width: 100px;
+    font-family: 'Inconsolata', monospace;
+    transition-duration: .5s;
+}
+.linker:hover{
+    background-color: rgba(233, 20, 20, 0.5);
+    transition-duration: .5s;
+} 
+.contactdat{
+    padding: 4rem;
+    font-family: 'Inconsolata', monospace;
+    background-color: red;
+    transition-duration: .5s;
+}
+.datsec{
+    height: 40vh;
+    padding: 20px;
+}
+.grid-4{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.contactdat:hover{
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+.datsec{
+    margin-top: 50px;
+}
+.about123{
+    color: #000000;
+}

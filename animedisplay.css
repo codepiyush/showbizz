@@ -20,7 +20,9 @@
     background: linear-gradient(#FF943A, #FF7500);
     /*margin: auto;*/
 }
-
+.about123{
+    color: #333;
+}
 a:link {
     text-decoration: none;
     color: black;

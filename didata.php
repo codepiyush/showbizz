@@ -33,7 +33,7 @@
             <a href='animedisplay.php'>Anime</a>
             </div>
             <div class="font center linker">
-            <a href="movie.php">Movies</a>
+            <a href="series.php">Series</a>
             </div>
         </nav>
     </header>
@@ -50,7 +50,7 @@
 
         }
         $name=$_POST["msearch"];
-        $sql="SELECT * FROM actor where name='$name'";
+        $sql="SELECT * FROM direc where name like'%$name%'";
         if($conn->query($sql))
         {
             $result=$conn->query($sql);
@@ -85,8 +85,8 @@
     <section class="about">
         <div class="container grid-2 center">
             <div class="center about1">
-                <i class="fas fa-users fa-2x"></i>
-                <h3 class="aboutus">About Us</h3>
+            <a href="about.html" class="about123"><i class="fas fa-users fa-2x"></i>
+                <h3 class="aboutus">About Us</h3></a>
             </div>
             <div class="left_border" >
                 <div class="contact">

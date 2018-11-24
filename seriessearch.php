@@ -34,7 +34,7 @@
             </div>
             <div class="left_border padadj">
                 <form action="seriessearch.php" method="POST" >
-                    <input type="text" name="msearch" id="msearch" placeholder="Search movies">
+                    <input type="text" name="msearch" id="msearch" placeholder="Search series">
                     <input type="submit" value="search" id="mbutton">
                 </form>
             </div>
@@ -82,8 +82,8 @@
     <section class="about">
         <div class="container grid-2 center">
             <div class="center about1">
-                <i class="fas fa-users fa-2x"></i>
-                <h3 class="aboutus">About Us</h3>
+            <a href="about.html" class="about123"><i class="fas fa-users fa-2x"></i>
+                <h3 class="aboutus">About Us</h3></a>
             </div>
             <div class="left_border" >
                 <div class="contact">
