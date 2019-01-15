@@ -45,8 +45,8 @@
         <div class="grid-5 pad0 center">
     <?php
         $servername="localhost";
-        $username="root";
-        $password="";
+        $username="piyush";
+        $password="piyush@123";
         $dbname="movies";
         $conn=new mysqli($servername,$username,$password,$dbname);
         if($conn->connect_error)
@@ -79,8 +79,8 @@
         <div class="grid-5 pad0 center">
     <?php
         $servername="localhost";
-        $username="root";
-        $password="";
+        $username="piyush";
+        $password="piyush@123";
         $dbname="movies";
         $conn=new mysqli($servername,$username,$password,$dbname);
         if($conn->connect_error)

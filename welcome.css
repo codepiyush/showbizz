@@ -52,8 +52,8 @@ a{
 }
 .down{
     position: absolute;
-    margin-top: 680px;
-    margin-left: 730px;
+    top: 820px;
+    left: 930px;
     z-index: 1;
     color: rgb(255, 255, 255);
     padding: 5px;

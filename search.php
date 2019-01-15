@@ -20,8 +20,8 @@
     <div id="main" >
     <?php
             $servername = "localhost";
-            $username = "root";
-            $password = "";
+            $username="piyush";
+            $password="piyush@123";
             $dbname = "movies";
             $word=$_POST["wsearch"];
             echo "<p class='headtext'>Search Results For: $word</p>";

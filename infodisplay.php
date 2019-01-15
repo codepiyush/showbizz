@@ -8,8 +8,8 @@
     <?php
 
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $username="piyush";
+    $password="piyush@123";
     $dbname = "movies";
     $name = $_POST["wsearch"];
     
